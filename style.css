@@ -42,23 +42,27 @@ html {
 .section-1-imgs {
     width: 500px;
     height: 300px;
-    overflow: hidden;
-    margin: 0 auto;
-    border: 2px solid black;
-    box-shadow: .2rem .2rem .2rem #272727;
-    
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 1rem 1rem 1rem #000;    
 }
 
 .section-1-imgs img {
-    position:relative;
-    transform: translate(-50%, -50%) scale(0);
-    transition: transform .3s;
+    width: 500px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+    position: absolute;
+    transform: translate(0, 0) scale(0);
+    transition: transform 1s;
 }
 
 .section-1-imgs img.change {
-    transform: translate(-50%, -50%) scale(1);
-    transition: transform .3s;
+    transform: translate(0, 0) scale(1);
+    transition: transform 1s;
 }
 
 /* Section-2 */
